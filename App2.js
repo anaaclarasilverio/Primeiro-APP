@@ -1,17 +1,12 @@
 import { View, StyleSheet} from "react-native";
-import InfoProfile from "./src/componentes/infoProfile";
-import Perfil from './src/assets/Praia-de-Tabatinga2-joao-pessoa.webp'
+import Header from "./src/componentes/Header";
+import Stories from "./src/componentes/Stories";
 
 export default function App() {
   return (
     <View style={{ marginVertical: 32, marginHorizontal: 16, flex: 1 }}>
-
-      <InfoProfile
-      image={Perfil}
-      publi={250}
-      followers={1230}
-      following={5}
-      description=""/>
+     <Header/>
+     <Stories/>
       
       
       
