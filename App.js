@@ -1,6 +1,7 @@
 import { View, StyleSheet} from "react-native";
 import InfoProfile from "./src/componentes/infoProfile";
 import Perfil from './src/assets/Praia-de-Tabatinga2-joao-pessoa.webp'
+import MyPosts from "./src/componentes/MyPosts";
 
 export default function App() {
   return (
@@ -12,6 +13,9 @@ export default function App() {
       followers={1230}
       following={5}
       description=""/>
+
+      <MyPosts
+      image={Perfil}/>
       
       
       
