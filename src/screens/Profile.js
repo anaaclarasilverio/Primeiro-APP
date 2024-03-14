@@ -1,12 +1,21 @@
 import { View, StyleSheet} from "react-native";
-import Header from "../componentes/Header";
-import Stories from "../componentes/Stories";
+import InfoProfile from "../componentes/infoProfile";
+import Perfil from '../assets/Praia-de-Tabatinga2-joao-pessoa.webp'
+import MyPosts from "../componentes/MyPosts";
 
-export default function Home() {
+export default function Profile() {
   return (
     <View style={{ marginVertical: 32, marginHorizontal: 16, flex: 1 }}>
-     <Header/>
-     <Stories/>
+
+      <InfoProfile
+      image={Perfil}
+      publi={250}
+      followers={1230}
+      following={5}
+      description=""/>
+
+      <MyPosts
+      image={Perfil}/>
       
       
       

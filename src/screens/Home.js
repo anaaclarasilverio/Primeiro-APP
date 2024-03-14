@@ -1,33 +1,36 @@
-import { View, StyleSheet} from "react-native";
-import InfoProfile from "../componentes/infoProfile";
-import Perfil from '../assets/Praia-de-Tabatinga2-joao-pessoa.webp'
-import MyPosts from "../componentes/MyPosts";
+import { View, StyleSheet, ScrollView } from "react-native";
+import Header from "../componentes/Header";
+import Stories from "../componentes/Stories";
+import Post from "../componentes/Post";
+import julia from "../assets/Praia-de-Tabatinga2-joao-pessoa.webp";
 
-export default function Profile() {
+export default function Home() {
   return (
-    <View style={{ marginVertical: 32, marginHorizontal: 16, flex: 1 }}>
+    <ScrollView style={{ marginVertical: 32, marginHorizontal: 16 }}>
+      <Header />
+      <Stories />
+      <Post
+        profileImage={julia}
+        postImage={julia}
+        profileName='Júlia Santos'
+        description='Lorem Lorem Lorem Lorem Loren Loren Loren Loren Loren Loren'
+      />
 
-      <InfoProfile
-      image={Perfil}
-      publi={250}
-      followers={1230}
-      following={5}
-      description=""/>
+      <Post
+        profileImage={julia}
+        postImage={julia}
+        profileName='Júlia Santos'
+        description='Lorem Lorem Lorem Lorem Loren Loren Loren Loren Loren Loren'
+      />
 
-      <MyPosts
-      image={Perfil}/>
-      
-      
-      
-    </View>
+      <Post
+        profileImage={julia}
+        postImage={julia}
+        profileName='Júlia Santos'
+        description='Lorem Lorem Lorem Lorem Loren Loren Loren Loren Loren Loren'
+      />
+    </ScrollView>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
